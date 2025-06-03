@@ -1,34 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
+import './App.css'
+import '@fontsource/roboto/900.css'
+import ResponsiveAppBar from './components/ResponsiveAppBar/ResponsiveAppBar'
+import { ThemeProvider } from '@emotion/react'
+import { createTheme, Grid } from '@mui/material'
+import Carousel from './components/Carousel/Carousel'
+import { useMediaQuery } from '@mui/material';
+const darkTheme = createTheme({
+  palette: {
+    mode: 'dark',
+  },
+})
 function App() {
-  const [count, setCount] = useState(0)
+  const isXs = useMediaQuery('(max-width:600px)');
+
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+<ThemeProvider theme={darkTheme}>
+      <ResponsiveAppBar  />
+      {!isXs && <Carousel />}
+      <Grid container spacing={2} >
+
+        
+      </Grid>
+      
+
+  </ThemeProvider>
   )
 }
 
