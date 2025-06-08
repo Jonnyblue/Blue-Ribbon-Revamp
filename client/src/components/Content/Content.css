@@ -1,0 +1,43 @@
+.content *{
+    margin: 20px;
+}
+
+.content
+{
+    margin: 0;
+    background-color: #353535;
+    border-radius: 20px;
+    border: 20px solid #353535;
+    box-sizing: border-box;
+}
+
+.content h1
+{
+    color: #0ea8b4;
+    font-size: 2rem;
+    text-align: left;
+    margin: 20px;
+}
+
+.content p
+{
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.content li
+{
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.content img
+{
+    margin: 0 20px 0 20px;
+    width: 95%;
+    display: block;
+    object-fit: contain;
+    align-content: center;
+}

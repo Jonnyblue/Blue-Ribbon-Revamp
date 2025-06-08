@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Paper, Typography } from "@mui/material";
 import logo from "./../../assets/blueribbonlogo.png";
 import "./Header.css";
 

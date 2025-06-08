@@ -1,0 +1,10 @@
+.footer
+{
+    background-color: #353535;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    border: 20px solid #353535;
+    box-sizing: border-box;
+}
